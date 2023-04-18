@@ -1,0 +1,196 @@
+!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Empire limited</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .card{
+            visibility: hidden;
+            display: none;
+            padding: 20px; 
+        }
+        .icon {
+            width: 70%;
+            padding: 0px auto;
+            border: none;
+        }
+
+        body {
+            margin: 10px;
+            padding: 0px;
+            background-color: rgb(63, 160, 224);
+        }
+
+        div {
+            padding: 20px;
+            font-size: 150%;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: bisque;
+            border-radius: 95px;
+        }
+
+        ul {
+            display: flex;
+            
+        }
+
+        li {
+            list-style-type: none;
+            padding: 0px 20px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: rgb(210, 118, 84);
+            font-weight: 400;
+            padding: 5px;
+
+        }
+
+        ul li a:hover {
+            border-bottom: 2px solid;
+            transition: 1s ease-out;
+            padding: 5px;
+
+        }
+
+        h1 {
+            color: orangered;
+        }
+
+        p {
+            color: rgb(210, 118, 84);
+            font-weight: 400;
+        }
+
+        img {
+            border-radius: 70%;
+            border: 3px solid orangered;
+        }
+
+        .contact {
+            display: flex;
+            justify-content: space-between;
+            font-size: 100%;
+        }
+
+        .fb {
+            background-color: bisque;
+            width: 300px;
+            margin: 0px 10px;
+            color: orangered;
+            border-radius: 30px;
+        }
+
+        .fb:hover .card {
+            visibility: visible;
+            display: unset;
+            padding: 5px 30px;
+
+        }
+        .fb:hover .icon{
+            visibility: hidden;
+            display: none;
+            padding: 30px;
+            
+        }
+        .fb:hover{
+            background-color: orangered;
+            transition: 1.0s ease-out;
+            color: bisque;
+        }
+        footer {
+            background-color: orangered;
+            padding: 10px;
+            color: whitesmoke;
+            border-radius: 50px;
+        }
+        @media only screen and (max-width:600px){
+            body{
+                text-align: center;
+            }
+            .contact{
+                display: flex;
+                flex-direction: column;
+            }
+            .fb{
+                margin-bottom: 30px;
+            }
+            figure img{
+                align-items: center;
+                margin-right:100px ;
+                margin-left: 80px;
+                
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+   <img src="Images/J P 01.png" alt=" width"50%>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#footer">Help</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div>
+            <h1>Welcome to Empire limited!</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quos debitis amet hic laudantium temporibus
+                fuga tenetur recusandae expedita iste!</p>
+        </div>
+        <div>
+            <figure><a class="img" href="Images/J P 02.jpg"><img width="30%" height="60%" src="Images/J P 02.jpg"></a> what we
+                have to offfer</figure>
+        </div>
+        <h1 id="contact" style="font-size:200%;
+        padding: 5px;margin: 5px 30px;">Contact me on my social media handles ⤵</h1>
+        <div class="contact">
+
+            <div class="fb">
+                <img class="icon" src="Images/ddi.jpeg" alt="">
+                <div class="card">
+                    <h2>Message me @</h2>
+                    <a href="">+234 9031443920</a>
+                </div>
+            </div>
+            <div class="fb">
+                <img class="icon" src="Images/ddf.jpg" alt="">
+                <div class="card">
+                    <h2>Follow me on Facebook @</h2>
+                    <a href="milliondollar@facebook.com">@milliondollar</a>
+                </div>
+            </div>
+            <div class="fb">
+                <img class="icon" src="Images/ddt.jpg" alt="">
+                <div class="card">
+                    <h2>Like us on Twitter</h2>
+                    <p>On our Twitter handle @ <a href="milliondollar@twitter.com">@milliondollar</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <marquee behavior="" direction="">Empire Company limited &copy;2023 We Render the Best Service</marquee>
+    </footer>
+</body>
+
+</html>
